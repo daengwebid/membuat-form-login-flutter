@@ -47,7 +47,7 @@ class GetStarted extends StatelessWidget {
                   borderRadius: BorderRadius.circular(80.0),
                 ),
                 padding: const EdgeInsets.all(0.0),
-                child: Ink(
+                child: Container(
                   decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: <Color>[Color(0xFF13E3D2), Color(0xFF5D74E2)],
@@ -56,19 +56,17 @@ class GetStarted extends StatelessWidget {
                       Radius.circular(80.0),
                     ),
                   ),
-                  child: Container(
-                    constraints: const BoxConstraints(
-                      minWidth: 150.0,
-                      minHeight: 36.0,
-                    ),
-                    alignment: Alignment.center,
-                    child: const Text(
-                      'Get Started',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
+                  constraints: const BoxConstraints(
+                    minWidth: 150.0,
+                    minHeight: 36.0,
+                  ),
+                  alignment: Alignment.center,
+                  child: const Text(
+                    'Get Started',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
